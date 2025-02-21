@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon 2025 - Event Details</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .details {
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        .prizes, .rules {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e3f2fd;
+            border-left: 5px solid #2196F3;
+        }
+        .schedule {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e8f5e9;
+            border-left: 5px solid #4CAF50;
+        }
+        .register-form {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff3e0;
+            border-left: 5px solid #FF9800;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background: #ff5722;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background: #e64a19;
+        }
+        .pay-btn {
+            background: #009688;
+        }
+        .pay-btn:hover {
+            background: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 AI/ML Challenge 2025 - Event Details</h1>
+    <p class="details">
+        🔹 <b>Event Name:</b> AI/ML Challenge <br>
+        🔹 <b>Date:</b> February 19, 2025 <br>
+        🔹 <b>Time:</b> 08:00 AM - 11:00 PM <br>
+        🔹 <b>Venue:</b> To be announced <br>
+        🔹 <b>Registration Fee:</b> ₹500  
+    </p>
+
+    <div class="prizes">
+        <h2>🏆 Prize Details</h2>
+        🥇 First Prize: ₹50,000 <br>
+        🥈 Second Prize: ₹30,000 <br>
+        🥉 Third Prize: ₹15,000  
+    </div>
+
+    <div class="schedule">
+        <h2>🕒 Schedule</h2>
+        📌 08:00 AM - 09:00 AM → Registration & Team Formation <br>
+        📌 09:00 AM - 09:30 AM → Problem Statement Release <br>
+        📌 09:30 AM - 10:00 PM → Coding & Development Phase <br>
+        📌 10:00 PM - 11:00 PM → Project Submission & Demo <br>
+        📌 11:00 PM → Results Announcement & Prize Distribution  
+    </div>
+
+    <div class="rules">
+        <h2>📜 Rules & Regulations</h2>
+        ✅ Team Size: Maximum of 4 members <br>
+        ✅ Allowed Technologies: Any programming language, frameworks, or tools <br>
+        ✅ Originality: All solutions must be developed during the hackathon <br>
+        ✅ Code Hosting: Submit via GitHub/GitLab <br>
+        ✅ Judging Criteria:
+        <ul>
+            <li>Innovation & Creativity (30%)</li>
+            <li>Functionality & Usability (25%)</li>
+            <li>Technical Complexity (25%)</li>
+            <li>Presentation & Demo (20%)</li>
+        </ul>
+        ✅ Disqualification: Plagiarism or unethical practices will lead to disqualification  
+    </div>
+
+    <div class="register-form">
+        <h2>📋 Register Now</h2>
+        <form id="registerForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="event">Select Event</label>
+            <select id="event">
+                <option value="Hackathon">Hackathon</option>
+                <option value="Coding Contest">Coding Contest</option>
+                <option value="Cyber Security CTF">Cyber Security CTF</option>
+                <option value="AI/ML Challenge">AI/ML Challenge</option>
+            </select>
+
+            <button type="submit" class="btn">Register</button>
+            <button type="button" class="btn pay-btn" onclick="alert('Payment gateway coming soon!')">Pay ₹500</button>
+        </form>
+    </div>
+
+    <div class="contact">
+        <h2>📌 Contact & Registration</h2>
+        📌 Last Date to Register: February 17, 2025 <br>
+        📌 Contact Email: hackathon@techevent.com <br>
+        📌 Phone: +91 98765 43210  
+    </div>
+</div>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let email = document.getElementById("email").value;
+        let event = document.getElementById("event").value;
+
+        if (name && phone && email) {
+            alert("✅ Registration Successful!\n📌 Name: " + name + "\n📌 Phone: " + phone + "\n📌 Email: " + email + "\n📌 Event: " + event);
+        } else {
+            alert("❌ Please fill in all fields.");
+        }
+    });
+</script>
+
+</body>
+</html>
