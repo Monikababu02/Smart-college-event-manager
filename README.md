@@ -1,1 +1,0 @@
-# Smart-college-event-manager
